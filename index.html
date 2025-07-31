@@ -80,8 +80,28 @@
       <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2>Rifa Sanjida Haque Diya</h2>
-            <p>I'm a CSE student</p>
+
+            <!-- Make sure typed.js is loaded -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+  <h2>Rifa Sanjida Haque Diya</h2>
+  <p>
+    I'm a 
+    <span id="typed" class="typed"></span>
+  </p>
+</div>
+
+<script>
+  new Typed('#typed', {
+    strings: ["CSE student", "Food Enthusiast", "Passionate home cook"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 2000,
+    loop: true
+  });
+</script>
+           
             <a href="about.html" class="btn-get-started">About Me</a>
           </div>
         </div>
